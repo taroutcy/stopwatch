@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #fff;
+}
+
+.stopwatch {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	backdrop-filter: blur(5px);
+}
+
+#stopwatch {
+	font-size: 96px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+#stopwatch span {
+	margin: 0 5px;
+}
+
+button {
+	font-size: 18px;
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#start {
+	background-color: #4caf50;
+}
+
+#start:hover {
+	background-color: #3e8e41;
+	transform: translateY(-2px);
+}
+
+#stop {
+	background-color: #f44336;
+}
+
+#stop:hover {
+	background-color: #d32f2f;
+	transform: translateY(-2px);
+}
+
+#reset {
+	background-color: #2196f3;
+}
+
+#reset:hover {
+	background-color: #1976d2;
+	transform: translateY(-2px);
+}
+
+button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+}
