@@ -59,7 +59,7 @@ function resetStopwatch() {
 	hoursDisplay.textContent = "00";
 	minutesDisplay.textContent = "00";
 	secondsDisplay.textContent = "00";
-	millisecondsDisplay.textContent = "000";
+	millisecondsDisplay.textContent = "00";
 	document.title = "Stopwatch";
 	startButton.disabled = false;
 	stopButton.disabled = true;
